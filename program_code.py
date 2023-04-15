@@ -6,6 +6,13 @@ import pyfiglet
 import time
 from colorama import Back
 
+# create list of colors for font
+yellow = "\033[93m"
+red = "\033[91m"
+blue = "\033[94m"
+green = "\033[92m"
+colors = [yellow, green, blue]
+
 # take in string input from user
 str_input = input("Enter encrypted string: ")
 
