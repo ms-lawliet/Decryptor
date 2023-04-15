@@ -13,6 +13,12 @@ blue = "\033[94m"
 green = "\033[92m"
 colors = [yellow, green, blue]
 
+# print program title
+print(f'{red}-'*185)
+print(Back.BLACK + pyfiglet.figlet_format('DECRYPTOR', font='nancyj-fancy', width=180, justify='center'), end='')
+print(Back.RESET + '-'*185 + '\n')
+time.sleep(0.5)
+
 # take in string input from user
 str_input = input("Enter encrypted string: ")
 
