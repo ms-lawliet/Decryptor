@@ -2,7 +2,6 @@
 # the program will decrypt it using the following character substitute:
 # 'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
 
-# import design modules
 import pyfiglet
 import time
 from colorama import Back
