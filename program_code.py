@@ -49,8 +49,14 @@ class Decrypt:
                     break
             time.sleep(0.2)
 
-    # print decrypted string
-        print(f'{red}Decrypted string:', decrypt_u)
+        # print decrypted string
+        print(f'{red}Decrypted string: ')
+
+        output = Back.BLACK + pyfiglet.figlet_format(decrypt_u, font='basic', justify='center', width=180)
+
+        for letter in output:
+            print(letter, end='')
+            time.sleep(0.01)
 
 
 # call function
