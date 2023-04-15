@@ -15,14 +15,14 @@ class Decrypt:
     def decrypt_str(self):
         for letter in range(len(self.user_str)):    # replace each character with respective letter substitute:
             decrypt_a = self.user_str.replace('*', 'a')  # '*' for 'a'
+            decrypt_e = decrypt_a.replace('&', 'e')  # '&' for 'e'
 
-    # '&' for 'e'
     # '#' for 'i'
     # '+' for 'o'
     # '!' for 'u'
 
     # print decrypted string
-        print('Decrypted string:', decrypt_a)
+        print('Decrypted string:', decrypt_e)
 
 
 # call function
