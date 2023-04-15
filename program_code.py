@@ -18,10 +18,10 @@ class Decrypt:
             decrypt_e = decrypt_a.replace('&', 'e')  # '&' for 'e'
             decrypt_i = decrypt_e.replace('#', 'i')  # '#' for 'i'
             decrypt_o = decrypt_i.replace('+', 'o')  # '+' for 'o'
-    # '!' for 'u'
+            decrypt_u = decrypt_o.replace('!', 'u')  # '!' for 'u'
 
     # print decrypted string
-        print('Decrypted string:', decrypt_o)
+        print('Decrypted string:', decrypt_u)
 
 
 # call function
