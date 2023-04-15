@@ -2,6 +2,7 @@
 # the program will decrypt it using the following character substitute:
 # 'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
 
+# import design modules
 import pyfiglet
 import time
 from colorama import Back
@@ -19,10 +20,8 @@ print(Back.BLACK + pyfiglet.figlet_format('DECRYPTOR', font='nancyj-fancy', widt
 print(Back.RESET + '-'*185 + '\n')
 time.sleep(0.5)
 
-# take in string input from user
+# take in string input from user then create class for decryption
 str_input = input("Enter encrypted string: ")
-
-# create class for decryption
 
 
 class Decrypt:
@@ -37,8 +36,21 @@ class Decrypt:
             decrypt_o = decrypt_i.replace('+', 'o')  # '+' for 'o'
             decrypt_u = decrypt_o.replace('!', 'u')  # '!' for 'u'
 
+    # loading...
+        count = 0
+        while count != 4:
+            for i in range(len(colors)):
+                loading = (f"{colors[i]}Decrypting" + "." * count)
+                print('\r', loading, end="")
+                time.sleep(0.6)
+                count += 1
+                if count == 4:
+                    print('\r' + '                                   ')
+                    break
+            time.sleep(0.2)
+
     # print decrypted string
-        print('Decrypted string:', decrypt_u)
+        print(f'{red}Decrypted string:', decrypt_u)
 
 
 # call function
