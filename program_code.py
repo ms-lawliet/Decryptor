@@ -12,10 +12,21 @@ class Decrypt:
     def __init__(self, user_str):
         self.user_str = user_str
 
-# replace each character with respective letter substitute:
-# '*' for 'a'
-# '&' for 'e'
-# '#' for 'i'
-# '+' for 'o'
-# '!' for 'u'
-# print decrypted string
+    def decrypt_str(self):
+        for letter in range(len(self.user_str)):    # replace each character with respective letter substitute:
+            decrypt_a = self.user_str.replace('*', 'a')  # '*' for 'a'
+
+    # '&' for 'e'
+    # '#' for 'i'
+    # '+' for 'o'
+    # '!' for 'u'
+
+    # print decrypted string
+        print('Decrypted string:', decrypt_a)
+
+
+# call function
+user_input = Decrypt(str_input)
+user_input.decrypt_str()
+
+
