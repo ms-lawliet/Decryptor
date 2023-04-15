@@ -2,6 +2,10 @@
 # the program will decrypt it using the following character substitute:
 # 'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
 
+import pyfiglet
+import time
+from colorama import Back
+
 # take in string input from user
 str_input = input("Enter encrypted string: ")
 
