@@ -17,11 +17,11 @@ class Decrypt:
             decrypt_a = self.user_str.replace('*', 'a')  # '*' for 'a'
             decrypt_e = decrypt_a.replace('&', 'e')  # '&' for 'e'
             decrypt_i = decrypt_e.replace('#', 'i')  # '#' for 'i'
-    # '+' for 'o'
+            decrypt_o = decrypt_i.replace('+', 'o')  # '+' for 'o'
     # '!' for 'u'
 
     # print decrypted string
-        print('Decrypted string:', decrypt_i)
+        print('Decrypted string:', decrypt_o)
 
 
 # call function
