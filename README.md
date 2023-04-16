@@ -11,7 +11,7 @@
 - *To run this program, the user simply needs to input an encrypted string and from there, a decrypted version of the aforementioned string will be produced.*
 
 ## *Demo*
-Below is a short demo of the program:
+Below is a quick demo of the program:
 
 https://user-images.githubusercontent.com/129574658/232314940-dbca489f-4e3c-4d5e-9722-e7dff65274f0.mp4
 
